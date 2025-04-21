@@ -18,4 +18,16 @@ public class ProductService {
     public FakeStoreProductDTO getProductById(int productId){
         return fakeStoreClient.getProduct(productId);
     }
+
+    public FakeStoreProductDTO createProduct(FakeStoreProductDTO input) {
+        return fakeStoreClient.createProduct(input);
+    }
+
+    public FakeStoreProductDTO replaceProduct(int id,FakeStoreProductDTO input) {
+        return fakeStoreClient.replaceProduct(id,input);
+    }
+
+    public Boolean deleteProduct(int id) {
+        return fakeStoreClient.deleteProduct(id);
+    }
 }
