@@ -1,0 +1,21 @@
+Calling 3rd Party APIs - 15-04-25
+
+1. Write the mechanism to call - getAllProduct and getProductById APIs
+on fakeStore
+2. Create our own APIs, to get all products and getProductById which will
+internally call fakeStore and show the data
+
+CLIENT <-> ProductService <-> FakeStoreAPI
+
+controller -> contains the APIs
+service -> contains the business logic
+repository -> talks to DB, does CRUD
+model -> contains schema
+client -> classes that will talk to other services
+
+ProductService -> FakeStore Service
+FakeStoreClient -> contains the code to communicate with FakeStore
+
+Spring ->
+RestTemplate -> becoming deprecated || today we will use RestTemplate
+WebClient -> latest
